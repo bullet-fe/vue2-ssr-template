@@ -1,0 +1,18 @@
+{
+  "name": "vue2-ssr-template",
+  "version": "1.0.0",
+  "description": "用vue2.x搭建一个基础的ssr项目，了解ssr原理",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzg1023/vue2-ssr-template.git"
+  },
+  "keywords": ["vue","ssr"],
+  "author": "gzg1023",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gzg1023/vue2-ssr-template/issues"
+  },
+  "homepage": "https://github.com/gzg1023/vue2-ssr-template#readme"
+}
