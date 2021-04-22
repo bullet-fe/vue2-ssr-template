@@ -24,4 +24,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="less">
+#app{
+  margin: 0;
+  padding: 0;
+  h2{
+    background-color: antiquewhite;
+  }
+}
+</style>
