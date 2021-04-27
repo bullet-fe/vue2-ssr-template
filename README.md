@@ -33,3 +33,15 @@ vue2.6.12
 express
 
 </div>
+
+
+```javascript
+// 项目主入口
+vue2-ssr-template/server.js
+
+// 客户端入口文件
+vue2-ssr-template/src/entry-client.js
+
+// 服务端入口文件
+vue2-ssr-template/src/entry-server.js
+```

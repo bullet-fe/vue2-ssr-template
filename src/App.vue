@@ -6,6 +6,9 @@
       <input type="text" v-model="msg" />
     </div>
     <button @click="onClick">Add</button>
+    <router-link to="/">Home</router-link>
+    <router-link to="About">About</router-link>
+    <router-view />
   </div>
 </template>
 

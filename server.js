@@ -33,30 +33,28 @@ if (ipProduction) {
   });
 }
 
-const render = (req, res) => {
-  renderer.renderToString(
-    {
+const render = async (req, res) => {
+  try {
+    const html = await renderer.renderToString({
       title: "vue2-ssr-template",
       meta: `<meta name="description" content="vue2-ssr-template"/>`,
-    },
-    (err, html) => {
-      if (err) {
-        console.log("err", err);
-        return res.status(500).end("Internal Server Error");
-      }
-      // 设置返回的编码
-      res.setHeader("Content-Type", "text/html;charset=utf-8");
-      // 通过ssr注释，直接注入到html中
-      res.end(html);
-    }
-  );
+      url: req.url,
+    });
+    // 设置返回的编码
+    res.setHeader("Content-Type", "text/html;charset=utf-8");
+    // 通过ssr注释，直接注入到html中
+    res.end(html);
+  } catch (error) {
+    console.log(error)
+     res.status(500).end("Internal Server Error");
+  }
 };
-
-const  devRender = async (req, res) => {
+const devRender = async (req, res) => {
   // 构建完成后，进行生成
-  await onReady
-  render();
+  await onReady;
+  render(req, res);
 };
+// 通过*匹配所有路由
 server.get("*", ipProduction ? render : devRender);
 
 server.listen(3000, () => {
