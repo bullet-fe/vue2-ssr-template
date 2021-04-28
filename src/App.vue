@@ -19,6 +19,10 @@ export default {
       msg: "hello vue2-ssr-template !",
     };
   },
+  metaInfo: {
+    title: "vue项目",
+    titleTemplate: "%s | My vue ssr",
+  },
   methods: {
     onClick() {
       console.log(this.msg);
@@ -28,10 +32,10 @@ export default {
 </script>
 
 <style lang="less">
-#app{
+#app {
   margin: 0;
-  padding: 0;
-  h2{
+  padding: 40px;
+  h2 {
     background-color: antiquewhite;
   }
 }

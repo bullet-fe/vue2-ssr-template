@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{15:function(n,e,t){"use strict";t.r(e);var i={name:"view404"},s=t(2),l=Object(s.a)(i,(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("\n    view404\n")])}),[],!1,null,null,null);e.default=l.exports}}]);
-//# sourceMappingURL=3.d5f65f1167f57fc40ecd.js.map

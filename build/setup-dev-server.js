@@ -61,7 +61,7 @@ module.exports = (server, callback) => {
     clientConfig.entry.app
   ]
   // HMR保持名称一致
-  clientConfig.output.filename = '[naem].js'
+  clientConfig.output.filename = '[name].js'
   const clientCompiler = webpack(clientConfig);
 
   // 配置开发HMR

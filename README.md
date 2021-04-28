@@ -15,7 +15,7 @@
   </a>
 </p>
 
-手工搭建vue-ssr项目，基于webpack4.x和vue2.6.12搭建，node服务使用express
+手工搭建vue-ssr项目，基于``webpack4.x``和``vue2.6.12``搭建，node服务使用``express``,开发环境使用``webpack-dev-middleware``和``webpack-hot-middleware``进行热更新支持。
 
 如果需要使用webpack5以上的版本，先确保[webpack5 和vue2 ssr的bug](https://github.com/vuejs/vue/issues/11718)。这个官方的issue得到了解决
 
@@ -45,3 +45,32 @@ vue2-ssr-template/src/entry-client.js
 // 服务端入口文件
 vue2-ssr-template/src/entry-server.js
 ```
+
+## 使用 
+
+### 开发模式
+
+```bash 
+  yarn 
+
+  yarn dev
+```
+
+### 生产模式
+
+
+```bash 
+  yarn build
+
+  yarn start
+```
+
+## 技术点
+- vue 2.6.12
+- vue-router 3.5.1
+- vuex 3.6.2
+- vue-server-renderer 2.6.12
+- webpack 4.44.2 
+- express
+- axios
+- less
