@@ -2,7 +2,7 @@
   <div>
     Home
     <ul>
-      <li v-for="item in infoList" :key="item.id">
+      <li v-for="item in infoList" :key="item.id" class="content">
         <!-- <img :key="item.author.avatar_url" alt=""> -->
         {{ item.author.loginname }}-
         {{ item.title }}

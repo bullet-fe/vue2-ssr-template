@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{50:function(t,s,e){"use strict";e.r(s);var n={name:"About",metaInfo:{title:"About",link:[{src:"https://cdn.staticfile.org/bulma/0.0.10/css/bulma.min.css",rel:"stylesheet"}],script:[{src:"https://cdn.staticfile.org/lodash.js/0.1.0/lodash.min.js",async:!0,defer:!0}]}},l=e(8),c=Object(l.a)(n,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("\n  About\n")])}),[],!1,null,null,null);s.default=c.exports}}]);
-//# sourceMappingURL=2.d41d573ef7553825cd7a.js.map

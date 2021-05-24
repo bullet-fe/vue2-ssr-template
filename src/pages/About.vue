@@ -1,6 +1,7 @@
 <template>
   <div>
-    About
+    About page
+    此页面额外加载了lodash
   </div>
 </template>
 
@@ -9,12 +10,6 @@ export default {
   name: "About",
   metaInfo: {
     title: "About",
-    link: [
-      {
-        src: "https://cdn.staticfile.org/bulma/0.0.10/css/bulma.min.css",
-        rel: 'stylesheet'
-      },
-    ],
     script: [
       {
         src: "https://cdn.staticfile.org/lodash.js/0.1.0/lodash.min.js",
